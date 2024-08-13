@@ -31,10 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        dataBinding true
+    }
 }
 
 dependencies {
     implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:xmlk')
 
     //test
     testImplementation 'junit:junit:4.13.2'

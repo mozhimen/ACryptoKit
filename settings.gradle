@@ -21,8 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "ACryptoKit"
 include ':app'
+include ':cryptok_basic'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':cryptok_basic'
+include ':SwiftKit:xmlk'
