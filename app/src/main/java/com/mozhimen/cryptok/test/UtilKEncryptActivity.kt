@@ -1,9 +1,9 @@
 package com.mozhimen.cryptok.test
 
 import android.os.Bundle
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
-import com.mozhimen.basick.postk.crypto.PostKCryptoAES
-import com.mozhimen.basick.postk.crypto.mos.MCryptoAESConfig
+import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.cryptok.basic.CryptoKAES
+import com.mozhimen.cryptok.basic.mos.MCryptoAESConfig
 import com.mozhimen.cryptok.test.databinding.ActivityUtilkEncryptBinding
 
 
@@ -22,11 +22,11 @@ class UtilKEncryptActivity : BaseActivityVDB<ActivityUtilkEncryptBinding>() {
         var res = ""
         vdb.utilkEncryptTxt1.text = content
         vdb.utilkEncryptBtnEncrypt.setOnClickListener {
-            pwd = PostKCryptoAES.with(MCryptoAESConfig(secretKey = "saaierForTodoKey", ivString = "ihaierForTodo_Iv")).encryptWithBase64(content)
+            pwd = CryptoKAES.with(MCryptoAESConfig(secretKey = "saaierForTodoKey", ivString = "ihaierForTodo_Iv")).encryptWithBase64(content)
             vdb.utilkEncryptTxt2.text = pwd
         }
         vdb.utilkEncryptBtnDecrypt.setOnClickListener {
-            res = PostKCryptoAES.with(MCryptoAESConfig(secretKey = "saaierForTodoKey", ivString = "ihaierForTodo_Iv")).decryptWithBase64(pwd)
+            res = CryptoKAES.with(MCryptoAESConfig(secretKey = "saaierForTodoKey", ivString = "ihaierForTodo_Iv")).decryptWithBase64(pwd)
             vdb.utilkEncryptTxt3.text = res
         }
     }
