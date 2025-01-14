@@ -37,9 +37,9 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:basick')
-    implementation project(':SwiftKit:xmlk')
-    implementation project(':SwiftKit:bindk')
+    implementation project(':ASwiftKit:basick')
+    implementation project(':ASwiftKit:xmlk')
+    implementation project(':ASwiftKit:bindk')
     implementation project(':cryptok_basic')
 
     //test
