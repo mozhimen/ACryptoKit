@@ -40,7 +40,7 @@ dependencies {
     implementation project(':ASwiftKit:basick')
     implementation project(':ASwiftKit:xmlk')
     implementation project(':ASwiftKit:bindk')
-    implementation project(':cryptok_basic')
+    implementation project(':basic')
 
     //test
     testImplementation 'junit:junit:4.13.2'
