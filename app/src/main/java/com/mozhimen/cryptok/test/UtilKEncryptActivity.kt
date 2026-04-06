@@ -1,10 +1,10 @@
 package com.mozhimen.cryptok.test
 
 import android.os.Bundle
-import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.cryptok.basic.CryptoKAES
 import com.mozhimen.cryptok.basic.mos.MCryptoAESConfig
 import com.mozhimen.cryptok.test.databinding.ActivityUtilkEncryptBinding
+import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
 
 
 /**

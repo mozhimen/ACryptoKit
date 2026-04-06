@@ -39,7 +39,7 @@ android {
 dependencies {
     implementation project(':ASwiftKit:basick')
     implementation project(':ASwiftKit:xmlk')
-    implementation project(':ASwiftKit:bindk')
+    implementation project(':ASwiftKit:uik:databinding')
     implementation project(':basic')
 
     //test
